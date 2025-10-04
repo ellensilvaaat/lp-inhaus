@@ -8,3 +8,5 @@ frontend/build/
 
 # geral
 .DS_Store
+
+backend/.env
