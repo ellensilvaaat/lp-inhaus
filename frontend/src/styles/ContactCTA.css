@@ -1,0 +1,73 @@
+.contact-cta {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px 80px;
+  color: white;
+  text-align: center;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.cta-content h2 span {
+  color: #F67C0B;
+}
+
+.cta-content p span {
+  color: #F67C0B;
+}
+
+.cta-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.contact-box {
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.contact-box span {
+  display: block;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.phone-button {
+  display: inline-block;
+  background-color: #F67C0B;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.phone-button:hover {
+  background-color: #e26800;
+}
+
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 24px;
+  }
+
+  .cta-content p {
+    font-size: 15px;
+  }
+}
