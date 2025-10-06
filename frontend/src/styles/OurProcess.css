@@ -153,6 +153,10 @@
   .process-step p {
     font-size: 15px;
   }
+
+  .process-step.flip .text {
+    text-align: center;
+  }
 }
 
 /* 📱 768px até 900px */

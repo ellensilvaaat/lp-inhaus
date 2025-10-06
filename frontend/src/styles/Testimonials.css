@@ -122,8 +122,10 @@
   }
 
   .testimonial-wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 24px;
+
   }
 
   .testimonial-card {

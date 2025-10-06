@@ -193,6 +193,7 @@
   .cta-projects {
     font-size: 15px;
     padding: 13px 24px;
+    max-width: 50%;
   }
 }
 

@@ -85,6 +85,7 @@
     text-align: center;
     gap: 30px;
     padding-bottom: 40px;
+    flex-wrap: nowrap;
   }
 
   .hero-text {

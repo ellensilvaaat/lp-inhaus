@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  background: url('../assets/footer-bg.png') no-repeat center center/cover;
+  background: url('../assets/footer-mobile.png') no-repeat center center/cover;
   color: black;
   height: 70vh;
   width: 100%;
@@ -15,11 +15,7 @@
 }
 
 .social-icons {
-  position: absolute;
-  top: 70px;
-  left: 30px;
-  display: flex;
-  gap: 20px;
+  display: none;
 }
 
 .social-icons a {
