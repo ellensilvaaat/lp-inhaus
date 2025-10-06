@@ -21,7 +21,7 @@ const FinalQuoteForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/quotes', {
+      const response = await fetch("https://lp-backend-oeql.onrender.com/api/quotes", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
