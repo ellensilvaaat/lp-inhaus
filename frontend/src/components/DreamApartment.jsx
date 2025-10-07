@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/DreamApartment.css';
-import dreamImage from '../assets/dream-apartment.png'; // substitua pelo nome correto da imagem
+import dreamImage from '../assets/dream-apartment.png';
 
 const DreamApartment = () => {
   return (

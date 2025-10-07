@@ -1,40 +1,40 @@
 .dream-apartment {
   background-color: #ffffff;
-  padding: 60px 20px 60px 150px;
+  padding: 60px 0;
   display: flex;
+  justify-content: center;
 }
 
 .dream-wrapper {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  max-width: 1200px;
-  gap: 40px;
-  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
 }
 
 .image-container {
   flex: 1;
-  min-width: 300px;
   position: relative;
+  width: 50%;
 }
 
 .image-container img {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: block;
 }
 
 .text-container {
-  flex: 1;
-  max-width: 450px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 50%;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #222;
-  position: absolute;
-  right: 150px;
-  padding-top: 150px;
 }
 
 .text-container p + p {
