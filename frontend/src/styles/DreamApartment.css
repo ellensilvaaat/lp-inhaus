@@ -28,7 +28,7 @@
 .text-container {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 60%;
   transform: translateY(-50%);
   width: 50%;
   font-family: 'Be Vietnam Pro', sans-serif;
