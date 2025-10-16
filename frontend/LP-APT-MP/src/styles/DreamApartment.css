@@ -1,0 +1,110 @@
+.dream-apartment {
+  background-color: #ffffff;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dream-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+}
+
+.image-container {
+  flex: 1;
+  position: relative;
+  width: 50%;
+}
+
+.image-container img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.text-container {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translateY(-50%);
+  width: 50%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+.text-container p + p {
+  margin-top: 20px;
+}
+
+/* ============ MEDIA QUERIES ============ */
+
+/* 📱 até 320px */
+@media (max-width: 320px) {
+  .dream-apartment {
+    flex-direction: column;
+    padding: 40px 10px;
+    position: relative;
+  }
+
+  .dream-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .text-container {
+    position: static;
+    right: auto;
+    padding: 0 10px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* 📱 321px até 767px */
+@media (min-width: 321px) and (max-width: 767px) {
+  .dream-apartment {
+    flex-direction: column;
+    padding: 50px 20px;
+    position: relative;
+  }
+
+  .dream-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text-container {
+    position: static;
+    right: auto;
+    padding: 0 15px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+/* 📱 768px até 900px */
+@media (min-width: 768px) and (max-width: 900px) {
+  .dream-apartment {
+    padding: 60px 30px;
+  }
+
+  .dream-wrapper {
+    gap: 40px;
+  }
+
+  .text-container {
+    position: static;
+    right: auto;
+    padding: 0 30px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+}

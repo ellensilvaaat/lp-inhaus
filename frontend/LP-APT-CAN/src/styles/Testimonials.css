@@ -1,0 +1,145 @@
+.testimonials-section {
+  background-color: white;
+  padding: 80px 20px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  text-align: center;
+}
+
+.testimonials-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.testimonials-header p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 80px;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #F67C0B;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.testimonial-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #F5EFE5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.testimonial-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stars {
+  margin-bottom: 12px;
+  color: #F67C0B;
+}
+
+.stars span {
+  font-size: 16px;
+  color: #ddd;
+}
+.stars span.filled {
+  color: #F67C0B;
+}
+
+.testimonial-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* 📱 até 320px */
+@media (max-width: 320px) {
+  .testimonials-section {
+    padding: 40px 10px 60px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 24px;
+  }
+
+  .testimonials-header p {
+    font-size: 14px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .testimonial-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+
+/* 📱 321px até 767px */
+@media (min-width: 321px) and (max-width: 767px) {
+  .testimonials-section {
+    padding: 60px 15px;
+  }
+
+  .testimonials-header h2 {
+    font-size: 28px;
+  }
+
+  .testimonials-header p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    padding: 0 15px;
+  }
+
+  .testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+  }
+
+  .testimonial-card {
+    padding: 22px;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
+ 
+@media (min-width: 768px) and (
+max-width: 1024px) {
+  .testimonial-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

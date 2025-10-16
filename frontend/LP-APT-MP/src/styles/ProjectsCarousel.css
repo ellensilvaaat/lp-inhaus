@@ -1,0 +1,200 @@
+.projects-carousel {
+  background-color: white;
+  padding: 60px 20px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  text-align: center;
+}
+
+.section-header {
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  position: relative;
+}
+
+.section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-header .underline {
+  width: 80px;
+  height: 3px;
+  background-color: #F67C0B;
+  border-radius: 2px;
+   margin-left: 0;
+}
+
+.project-block {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.project-block h3 {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #333;
+  margin-top: 100px;
+  opacity: 0.8;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.images-container {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  flex: 1;
+  justify-content: center;
+}
+
+.image-box {
+  flex-shrink: 0;
+  width: calc((100% - 40px) / 3);
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.arrow:hover {
+  color: #333;
+}
+
+.cta-projects {
+  margin: 40px auto 0;
+  max-width: 15%;
+  display: block;
+  background-color: #F67C0B;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-projects:hover {
+  background-color: #e26800;
+}
+/* 📱 ATÉ 320px */
+@media (max-width: 320px) {
+  .carousel-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .images-container {
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .image-box {
+    width: 90%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .section-header .underline {
+    display: none;
+  }
+
+  .section-header h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .project-block h3 {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .cta-projects {
+    font-size: 14px;
+    padding: 12px 20px;
+    width: 90%;
+  }
+}
+
+/* 📱 321px até 767px */
+@media (min-width: 321px) and (max-width: 767px) {
+  .carousel-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .images-container {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .image-box {
+    width: 85%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .section-header .underline {
+    display: none;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .project-block h3 {
+    margin-top: 35px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .cta-projects {
+    font-size: 15px;
+    padding: 13px 24px;
+    max-width: 50%;
+  }
+}
+
+
