@@ -2,52 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "https://lp-backend-oeql.onrender.com/api/$1"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/apt-can(?:/.*)?",
-      "dest": "/frontend/LP-APT-CAN/index.html"
-    },
-    {
-      "src": "/apt-mp(?:/.*)?",
-      "dest": "/frontend/LP-APT-MP/index.html"
-    },
-    {
-      "src": "/bt-tp(?:/.*)?",
-      "dest": "/frontend/LP-BT-TP/index.html"
-    },
-    {
-      "src": "/hc-tp(?:/.*)?",
-      "dest": "/frontend/LP-HC-TP/index.html"
-    },
-    {
-      "src": "/kt-mp(?:/.*)?",
-      "dest": "/frontend/LP-KT-MP/index.html"
-    }
-  ],
-  "builds": [
-    {
-      "src": "frontend/LP-APT-CAN/package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "frontend/LP-APT-MP/package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "frontend/LP-BT-TP/package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "frontend/LP-HC-TP/package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "frontend/LP-KT-MP/package.json",
-      "use": "@vercel/static-build"
+      "source": "/api/:path*",
+      "destination": "https://lp-backend-oeql.onrender.com/api/:path*"
     }
   ]
 }
